@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import { useParams,Link, json } from "react-router-dom"
 import './Detail.css'
+import { NavBar } from "./NavBar"
 
 export const Detail = () => {
     const [detail, setDetail] = useState([])
@@ -19,11 +20,8 @@ export const Detail = () => {
 
   return (
     <article className="detailPage">
-           <Link to="/" className="backLink">
-           <p> Movies</p> 
-           </Link>
-         
-        <div className="background" style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%), url(https://image.tmdb.org/t/p/w1280${detail.backdrop_path})` }}>
+                 <NavBar/>
+                <div className="background" style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%), url(https://image.tmdb.org/t/p/w1280${detail.backdrop_path})` }}>
           <div className="summary">
             <img src={`https://image.tmdb.org/t/p/w342${detail.poster_path}`} alt={detail.title} />
             <div className="details">

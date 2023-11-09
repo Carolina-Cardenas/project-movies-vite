@@ -20,6 +20,7 @@ export const Movie = () => {
   };
   return (
       <div className="moviePage">
+
       {movies.map((movie) => (
         <Link key={movie.id} to={`/detail/${movie.id}`}>
           <img src={`https://image.tmdb.org/t/p/w342${movie.poster_path}`} alt={movie.title} />
