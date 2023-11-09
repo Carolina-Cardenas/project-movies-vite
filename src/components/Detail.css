@@ -71,6 +71,6 @@
 }
 
 .detailPage .rating:before {
-  content: url("/star.svg");
+  content: url("star.svg");
   padding-right: 5px;
 }

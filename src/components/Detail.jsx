@@ -14,7 +14,6 @@ export const Detail = () => {
       .then((res) => res.json())
       .then((json) => {
         setDetail(json);
-        console.log(json);
       });
   }, [id]);
 
