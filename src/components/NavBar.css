@@ -1,0 +1,20 @@
+.backLink {
+  position: absolute;
+  display: inline-flex;
+  color: #fff;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  left: 50px;
+  top: 10px;
+  filter: drop-shadow(2px 3px 4px rgb(0 0 0 / 0.5));
+}
+
+.backLink svg {
+  width: 30px;
+  transition: margin-right 0.2s ease-in-out;
+}
+
+.backLink:hover svg {
+  margin-right: 5px;
+}
